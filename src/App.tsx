@@ -1,25 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NavBar from './Components/NavBar/NavBar';
+import * as Modules from './Modules';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar></NavBar>
+      <Modules.LandingImage
+        text={'IT ALL STARTS WITH A VISION'}
+      ></Modules.LandingImage>
+      <Modules.AboutUs></Modules.AboutUs>
+      <Modules.OurTeam></Modules.OurTeam>
+      <Modules.Quote
+        quote={
+          'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At dolores magni illo ad sequi quas quos dignissimos corporis quod modi doloremque et incidunt laudantium corrupti autem ea maxime, officia commodi.'
+        }
+        quoteer='Konfuzius'
+      ></Modules.Quote>
+      <Modules.Services></Modules.Services>
+      <Modules.Workflow></Modules.Workflow>
+      <Modules.OurWork></Modules.OurWork>
+      <Modules.Contact></Modules.Contact>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
   );
 }
 

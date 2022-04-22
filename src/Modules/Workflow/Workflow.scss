@@ -1,0 +1,53 @@
+@import "../../Styles/variables";
+@import "../../Styles/mixins";
+
+.main-workflow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://collection.cdn-pictorem.com/collection/900_Stockpix_black-and-white-city-skyline-buildings.jpg");
+    background-size: cover;
+    background-color: $main-gray;
+  
+    padding: 40px 0;
+
+
+    &__header{
+        @include Title($accent-color);
+        margin-top: 40px
+    }
+    &__item-container{
+
+        @include ContentWidth;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 0 0 0 ;
+
+        &__item{
+
+            height: 300px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &__icon{
+                height: 30px;
+              
+
+            }
+            &__label{
+                font-size: 1.5rem;
+                letter-spacing: 3.5px;
+                margin-top: 40px;
+              
+                font-weight: 300;
+
+            }
+        }
+    }
+    
+}
