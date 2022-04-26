@@ -7,6 +7,11 @@ const NavBar = () => {
   const navItems: { id: string; label: string }[] = [
     { id: 'home', label: 'Home' },
     { id: 'aboutUs', label: 'About Us' },
+    {
+      id: 'services',
+      label: 'Our Services',
+    },
+    { id: 'contact', label: 'Contact Us' },
   ];
   return (
     <nav className='main-navbar'>
@@ -26,13 +31,11 @@ const NavBar = () => {
       {mobile ? null : (
         <ul className='main-navbar__item-container'>
           {navItems.map(({ id, label }, key) => (
-            <a
-              key={key}
-              href={'#' + id}
-              className='main-navbar__item-container__item'
-            >
-              <li>{label}</li>
-            </a>
+            <li className='main-navbar__item-container__item'>
+              <a key={key} href={'/#' + id}>
+                {label}
+              </a>
+            </li>
           ))}
         </ul>
       )}

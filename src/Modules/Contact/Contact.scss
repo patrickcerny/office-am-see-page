@@ -84,7 +84,7 @@
       align-items: center;
       justify-content: flex-end;
       img {
-        width: 200px;
+        width: clamp(200px, 80%, 800px);
         margin: 0 50px;
       }
     }

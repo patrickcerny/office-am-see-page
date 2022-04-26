@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
 body {
-    margin: 0;
-    font-family: "Open Sans";
-    
+  margin: 0;
+  font-family: 'Palanquin', sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+*:target:before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
 }

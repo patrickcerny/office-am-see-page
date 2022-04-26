@@ -46,6 +46,7 @@ export const Workflow = () => {
         {ITEMS.map(({ icon, label }, key) => (
           <div className='main-workflow__item-container__item' key={key}>
             <img
+              loading='lazy'
               src={icon}
               alt='Icon'
               className='main-workflow__item-container__item__icon'

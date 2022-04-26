@@ -1,0 +1,42 @@
+.main-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  background-color: #2b2b2b;
+  color: white;
+
+  &__container {
+    width: clamp(300px, 40%, 500%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__upper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin: 0 20px;
+        text-align: center;
+        a {
+          color: white;
+        }
+      }
+    }
+    &__lower {
+      margin-top: 10px;
+
+      span {
+        font-size: 0.9rem;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

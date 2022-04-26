@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import useWindowDimensions from '../../Hooks/useWindowDimensions';
 import './Contact.scss';
+import Mountain from '../../Assets/mountain.png';
 
 export const Contact = () => {
   const { width } = useWindowDimensions();
@@ -11,7 +12,7 @@ export const Contact = () => {
     setTextareaWidth(emailRef.current.offsetWidth);
   }, [width]);
   return (
-    <section className='main-contact'>
+    <section className='main-contact' id='contact'>
       <div className='main-contact__text-container'>
         <h2 className='main-contact__text-container__header'>Contact us!</h2>
         <p>
@@ -71,10 +72,7 @@ export const Contact = () => {
         </div>
         {width > 800 ? (
           <div className='main-contact__contact-container__image-container'>
-            <img
-              src='https://images.unsplash.com/photo-1588025490822-a70d29baf93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80'
-              alt='coffe and a camera'
-            />
+            <img loading='lazy' src={Mountain} alt='Mountain Outline' />
           </div>
         ) : null}
       </div>

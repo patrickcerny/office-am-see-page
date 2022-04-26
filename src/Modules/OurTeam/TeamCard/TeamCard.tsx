@@ -22,7 +22,7 @@ export const TeamCard = ({ desc, job, name, links, image }: TeamCardType) => {
       <div className='main-team-card__links'>
         {links.map((link, index) => (
           <a href={link.link} key={index}>
-            <img src={link.icon} alt='alt' />
+            <img loading='lazy' src={link.icon} alt='alt' />
           </a>
         ))}
       </div>
