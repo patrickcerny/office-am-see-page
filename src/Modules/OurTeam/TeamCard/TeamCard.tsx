@@ -8,7 +8,7 @@ export const TeamCard = ({ desc, job, name, links, image }: TeamCardType) => {
   return (
     <article
       className='main-team-card'
-      style={width < 1100 ? { width: '300px' } : {}}
+      style={width < 1100 ? { width: '330px' } : {}}
     >
       <div
         className='main-team-card__image'

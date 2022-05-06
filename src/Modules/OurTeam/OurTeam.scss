@@ -1,35 +1,32 @@
-@import "../../Styles/variables";
-@import "../../Styles/mixins";
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
 
-.main-our-team{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: $light-gray;
-        padding: 30px 0;
-        
-    &__header {
-        margin: 0;
-        font-weight: 300;
-        font-size: 1.2rem;
-        @include Title($accent-color);
-        margin-top: 50px;
-        margin-bottom: 30px
-    }
+.main-our-team {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $light-gray;
+  padding: 30px 0;
 
-    &__text{
-        @include ContentWidth;
-        text-align: justify;
-    }
-    &__content{
-        @include ContentWidth;
-        margin: 20px 0 60px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-    }
+  &__header {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+    @include Title($accent-color);
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 
+  &__text {
+    @include ContentWidth;
+    text-align: justify;
+    @include Description;
+  }
+  &__content {
+    @include ContentWidth;
+    margin: 20px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }

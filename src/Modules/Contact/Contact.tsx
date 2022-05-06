@@ -14,17 +14,19 @@ export const Contact = () => {
   return (
     <section className='main-contact' id='contact'>
       <div className='main-contact__text-container'>
-        <h2 className='main-contact__text-container__header'>Contact us!</h2>
+        <h2 className='main-contact__text-container__header'>SCHREIB UNS!</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-          facilis voluptates repellendus architecto cum fugit exercitationem
-          consectetur nostrum deserunt corrupti fugiat sed dolore, consequatur
-          dolorum veniam blanditiis qui quia tempora?
+          Gerne können Sie uns via Kontaktformular oder direkt per Email
+          kontaktieren. Wir sind aber auch telefonisch für Ihre Fragen und
+          Anliegen erreichbar.
         </p>
       </div>
       <div className='main-contact__contact-container'>
         <div className='main-contact__contact-container__contact'>
-          <div className='main-contact__contact-container__contact__upper-input'>
+          <div
+            className='main-contact__contact-container__contact__upper-input'
+            style={width < 800 ? { marginRight: '0', width: '100%' } : {}}
+          >
             <div className='main-contact__contact-container__contact__upper-input__name'>
               <input
                 type='text'
@@ -39,6 +41,7 @@ export const Contact = () => {
                 name='last-name'
                 className='input-field'
                 placeholder='Nachname'
+                style={width < 800 ? { marginRight: '0' } : {}}
               />
             </div>
             <div className='main-contact__contact-container__contact__upper-input__email'>
@@ -49,6 +52,7 @@ export const Contact = () => {
                 name='email'
                 className='input-field'
                 placeholder='Email'
+                style={width < 800 ? { marginRight: '0' } : {}}
               />
             </div>
           </div>
@@ -71,8 +75,16 @@ export const Contact = () => {
           </div>
         </div>
         {width > 800 ? (
-          <div className='main-contact__contact-container__image-container'>
-            <img loading='lazy' src={Mountain} alt='Mountain Outline' />
+          <div className='main-contact__contact-container__map-container'>
+            <iframe
+              title='map'
+              style={{ border: 0 }}
+              loading='lazy'
+              allowFullScreen
+              referrerPolicy='no-referrer-when-downgrade'
+              src='https://www.google.com/maps/embed/v1/place?key=AIzaSyDJq2dWo_uGjQ6bzjzXw-nWbvKnWfnhgrA
+    &q=Bregenz'
+            ></iframe>
           </div>
         ) : null}
       </div>

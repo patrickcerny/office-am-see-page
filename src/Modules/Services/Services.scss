@@ -1,30 +1,36 @@
-@import "../../Styles/variables";
-@import "../../Styles/mixins";
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
 
-.main-services{
-    width: 100%;
-  
-    background-color: $light-gray;
+.main-services {
+  width: 100%;
+
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0 120px 0;
+
+  &__header {
+    @include Title($accent-color);
+    margin: 0 0 50px 0;
+  }
+  p {
+    @include Description;
+    @include ContentWidth;
+    margin: 20px 0 40px 0;
+    text-align: justify;
+    text-align-last: none;
+  }
+  &__card-container {
     display: flex;
+    @include ContentWidth;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 40px 0 120px 0;
 
-    &__header{
-        @include Title($accent-color);
-        margin: 0 0 50px 0;
+    &__cards {
+      display: flex;
+      align-items: center;
     }
-    &__card-container{
-        display: flex;
-        @include ContentWidth;
-        justify-content: center;
-        flex-direction: column;
-
-        &__cards{
-            display: flex;
-            align-items: center;
-        }
-
-    }
+  }
 }

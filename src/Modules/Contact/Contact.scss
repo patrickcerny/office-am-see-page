@@ -21,6 +21,9 @@
     &__header {
       @include Title($accent-color);
     }
+    p {
+      @include Description;
+    }
   }
   &__contact-container {
     display: flex;
@@ -28,9 +31,10 @@
 
     &__contact {
       flex: 1;
+      width: 80%;
 
       &__upper-input {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
 
@@ -53,13 +57,13 @@
         }
       }
       &__textarea {
-        width: 100%;
+        width: 90%;
         height: 200px;
         padding: 5px 10px;
         margin: 20px 00px 0 0;
       }
       &__button-container {
-        width: 100%;
+        width: 90%;
         &__button {
           border: none;
           background-color: $accent-color;
@@ -70,7 +74,6 @@
           margin-top: 20px;
           cursor: pointer;
           transition: filter 0.3s ease-in-out;
-          border-radius: 4px;
           font-size: 0.8rem;
           &:hover {
             filter: brightness(1.2);
@@ -78,14 +81,14 @@
         }
       }
     }
-    &__image-container {
+    &__map-container {
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      img {
-        width: clamp(200px, 80%, 800px);
-        margin: 0 50px;
+      iframe {
+        width: 90%;
+        height: 100%;
       }
     }
   }
@@ -94,7 +97,7 @@
 .input-field {
   border: none;
   background-color: $light-gray;
-  border-radius: 4px;
+  font-family: 'Palanquin', sans-serif;
   outline: none;
   font-size: 1.2em;
   resize: none;

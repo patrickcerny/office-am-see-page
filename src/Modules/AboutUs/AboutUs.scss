@@ -1,27 +1,28 @@
-@import "../../Styles/variables";
-@import "../../Styles/mixins";
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
 
-.main-about-us{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: $main-gray;
-    padding: 50px 0;
+.main-about-us {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $main-gray;
+  padding: 50px 0;
 
-    &__header{
-        margin: 0;
-        font-weight: 300;
-        font-size: 1.2rem;
-        @include Title($accent-color);
-        margin-top: 50px;
+  &__header {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+    @include Title($accent-color);
+    margin-top: 50px;
+  }
+  &__text-container {
+    @include ContentWidth;
+    margin: 30px 0 60px 0;
+
+    text-align: justify;
+    p {
+      @include Description;
     }
-    &__text-container{
-        @include ContentWidth;
-        margin: 30px 0 60px 0;
-        
-        text-align: justify;
-
-        
-    }
+  }
 }

@@ -14,12 +14,18 @@ const Footer = () => {
           <span>
             <Link to='/impressum'>Impressum</Link>
           </span>
-          <span>© 2022 OTIOSUM. All rights reserved.</span>
+
           <span>
-            <Link to='/dsgvo'>Datenschutz</Link>
+            <a href='tel:067682551906'>+43 676 82 55 19 06</a>
+          </span>
+          <span>
+            <a href='mailto:hello@otiosum-austria.com'>
+              hello@otiosum-austria.com
+            </a>
           </span>
         </div>
         <div className='main-footer__container__lower'>
+          <span>© 2022 OTIOSUM. All rights reserved.</span>
           <span>
             Made with ❤️ by <a href='https://patrickcerny.at/'>Patrick Cerny</a>
           </span>
