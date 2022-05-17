@@ -14,7 +14,7 @@ const TEAM: TeamCardType[] = [
     links: [
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png',
-        link: 'https://www.linkedin.com/in/patrick-cerny-70692b1b1/',
+        link: 'https://www.linkedin.com/in/leonhard-ohneberg-633a2b239/',
       },
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png',
@@ -34,7 +34,7 @@ const TEAM: TeamCardType[] = [
     links: [
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png',
-        link: 'https://www.linkedin.com/in/patrick-cerny-70692b1b1/',
+        link: 'https://www.linkedin.com/in/marvin-heine-034107239/',
       },
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png',
@@ -49,7 +49,7 @@ const TEAM: TeamCardType[] = [
   {
     name: 'Patrick Cerny',
     image: Patrick,
-    job: 'Produktionsassistenst, Web-Development',
+    job: 'Web-Development, Produktionsassistent',
     desc: '',
     links: [
       {

@@ -12,6 +12,11 @@ export const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [buttonDisabled, setButtonDisabled] = useState(true);
+  const dialogRef = useRef(null as any);
+  const [modalText, setModalText] = useState({
+    title: '',
+    text: '',
+  });
 
   useEffect(() => {
     setTextareaWidth(emailRef.current.offsetWidth);
@@ -39,7 +44,19 @@ export const Contact = () => {
       },
       'user_espyhP6sdMnYV5wc6YOP8'
     );
-    console.log(result);
+
+    if (result.status === 200) {
+      setModalText({
+        title: 'Vielen Dank für Ihre Nachricht!',
+        text: 'Wir werden uns so schnell wie möglich bei Ihnen melden.',
+      });
+    } else {
+      setModalText({
+        title: 'Etwas ist schief gelaufen!',
+        text: 'Versuchen Sie es noch einmal.',
+      });
+    }
+    dialogRef.current.showModal();
   };
 
   return (
@@ -47,8 +64,9 @@ export const Contact = () => {
       <div className='main-contact__text-container'>
         <h2 className='main-contact__text-container__header'>SCHREIB UNS!</h2>
         <p>
-          Gerne können Sie uns via Kontaktformular oder direkt per Email
-          kontaktieren. Wir sind aber auch telefonisch für Ihre Fragen und
+          Haben sie eine Idee? Oder möchten Sie einfach nur einen Kaffe mit uns
+          trinken? Gerne können Sie uns via Kontaktformular oder direkt per
+          Email kontaktieren. Wir sind aber auch telefonisch für Ihre Fragen und
           Anliegen erreichbar.
         </p>
       </div>
@@ -125,6 +143,13 @@ export const Contact = () => {
           </div>
         ) : null}
       </div>
+      <dialog ref={dialogRef} id='modal-email'>
+        <form method='dialog'>
+          <h2>{modalText.title}</h2>
+          <p>{modalText.text}</p>
+          <button>OK</button>
+        </form>
+      </dialog>
     </section>
   );
 };

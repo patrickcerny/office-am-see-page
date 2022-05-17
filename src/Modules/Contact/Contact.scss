@@ -83,6 +83,7 @@
 
           &:disabled {
             background-color: gray;
+            cursor: not-allowed;
             &:hover {
               filter: none;
             }

@@ -16,7 +16,7 @@ const Footer = () => {
           </span>
 
           <span>
-            <a href='tel:067682551906'>+43 676 82 55 19 06</a>
+            <a href='tel:067682551906'>+43 676 620 71 22</a>
           </span>
           <span>
             <a href='mailto:hello@otiosum-austria.com'>

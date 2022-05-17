@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
+@import 'Styles/variables';
+@import 'Styles/mixins';
+
 body {
   margin: 0;
   font-family: 'Palanquin', sans-serif;
@@ -13,4 +16,31 @@ html {
   display: block;
   height: 100px;
   margin: -100px 0 0;
+}
+
+#modal-email {
+  border: none;
+  border-radius: 5px;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  button {
+    border: none;
+    background-color: $accent-color;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
 }
