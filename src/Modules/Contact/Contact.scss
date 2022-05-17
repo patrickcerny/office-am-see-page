@@ -75,8 +75,17 @@
           cursor: pointer;
           transition: filter 0.3s ease-in-out;
           font-size: 0.8rem;
+          transition: background-color 0.3s ease-in-out;
+
           &:hover {
             filter: brightness(1.2);
+          }
+
+          &:disabled {
+            background-color: gray;
+            &:hover {
+              filter: none;
+            }
           }
         }
       }

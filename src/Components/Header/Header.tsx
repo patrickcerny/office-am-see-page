@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './Header.scss';
 import AnimateHeight from 'react-animate-height';
 import Logo from '../../Assets/logo_black.svg';
@@ -50,6 +49,14 @@ export const Header = ({
   };
 
   const componentDidMount = () => {
+    if (burgerRef.current)
+      burgerRef.current.onclick = () => {
+        if (!showMenu) {
+          setTransparent(false);
+        } else if (window.scrollY <= scrollBreakpoint) setTransparent(true);
+
+        setShowMenu(!showMenu);
+      };
     window.addEventListener('resize', resizeEvent);
     window.addEventListener('scroll', scrollEvent);
   };
@@ -86,13 +93,13 @@ export const Header = ({
           async
           defer
         ></script>
-        <Link to={`/`}>
+        <a href={`/`}>
           <img
             src={Logo}
             alt='Logo'
             style={!transparent ? {} : { filter: 'invert(100%)' }}
           />
-        </Link>
+        </a>
       </div>
       <ul className='header__navitem-container'>
         {navItems.map((_, key) => {
@@ -120,13 +127,13 @@ export const Header = ({
     >
       <div className='header__upper-container'>
         <div className='header__upper-container__image-container '>
-          <Link to={`/`}>
+          <a href={`/`}>
             <img
               src={Logo}
               alt='Logo'
               style={!transparent ? {} : { filter: 'invert(100%)' }}
             />
-          </Link>
+          </a>
         </div>
         <div className='header__upper-container__burger_container'>
           <div
@@ -154,12 +161,12 @@ export const Header = ({
                 key={key}
                 className='header__lower-container__navitem-container__item'
               >
-                <Link
+                <a
                   onClick={() => setShowMenu(false)}
-                  to={`/${navItems[key].to}`}
+                  href={`/${navItems[key].to}`}
                 >
                   {navItems[key].text.toUpperCase()}
-                </Link>
+                </a>
               </li>
             );
           })}

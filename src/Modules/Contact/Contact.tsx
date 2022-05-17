@@ -1,16 +1,47 @@
+import emailjs from '@emailjs/browser';
 import { useEffect, useRef, useState } from 'react';
 import useWindowDimensions from '../../Hooks/useWindowDimensions';
 import './Contact.scss';
-import Mountain from '../../Assets/mountain.png';
 
 export const Contact = () => {
   const { width } = useWindowDimensions();
   const [textareaWidth, setTextareaWidth] = useState(0);
   const emailRef = useRef(null as any);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [buttonDisabled, setButtonDisabled] = useState(true);
 
   useEffect(() => {
     setTextareaWidth(emailRef.current.offsetWidth);
-  }, [width]);
+
+    const isMailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+      email
+    );
+
+    setButtonDisabled(
+      !isMailValid || !firstName || !lastName || !email || !message
+    );
+  }, [width, firstName, lastName, email, message]);
+
+  const handleSubmit = async () => {
+    if (buttonDisabled) return;
+    console.log(firstName, lastName, email, message);
+
+    const result = await emailjs.send(
+      'service_ck7lwes',
+      'template_pmdfp1g',
+      {
+        from_name: firstName + ' ' + lastName,
+        message: message.replace(/<br\s?\/?>/g, '\n'),
+        reply_to: email,
+      },
+      'user_espyhP6sdMnYV5wc6YOP8'
+    );
+    console.log(result);
+  };
+
   return (
     <section className='main-contact' id='contact'>
       <div className='main-contact__text-container'>
@@ -34,6 +65,7 @@ export const Contact = () => {
                 name='first-name'
                 className='input-field'
                 placeholder='Vorname'
+                onChange={(e) => setFirstName(e.target.value)}
               />
               <input
                 type='text'
@@ -42,6 +74,7 @@ export const Contact = () => {
                 className='input-field'
                 placeholder='Nachname'
                 style={width < 800 ? { marginRight: '0' } : {}}
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
             <div className='main-contact__contact-container__contact__upper-input__email'>
@@ -53,6 +86,7 @@ export const Contact = () => {
                 className='input-field'
                 placeholder='Email'
                 style={width < 800 ? { marginRight: '0' } : {}}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
@@ -62,12 +96,15 @@ export const Contact = () => {
             name='text'
             id='text'
             placeholder='Deine Nachricht an uns...'
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <div className='main-contact__contact-container__contact__button-container'>
             <button
               style={{
                 width: textareaWidth + 'px',
               }}
+              onClick={handleSubmit}
+              disabled={buttonDisabled}
               className='main-contact__contact-container__contact__button-container__button'
             >
               Let's Go!
