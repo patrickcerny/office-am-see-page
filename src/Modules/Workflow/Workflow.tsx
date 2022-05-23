@@ -1,3 +1,4 @@
+import { createRef, useEffect, useRef } from 'react';
 import useWindowDimensions from '../../Hooks/useWindowDimensions';
 import './Workflow.scss';
 
@@ -26,6 +27,17 @@ const ITEMS: { icon: any; label: string }[] = [
 
 export const Workflow = () => {
   const { width } = useWindowDimensions();
+  const itemRefs = useRef([
+    createRef(),
+    createRef(),
+    createRef(),
+    createRef(),
+    createRef(),
+  ] as any);
+
+  useEffect(() => {
+    return () => {};
+  }, []);
 
   return (
     <section className='main-workflow'>
@@ -37,7 +49,11 @@ export const Workflow = () => {
         }}
       >
         {ITEMS.map(({ icon, label }, key) => (
-          <div className='main-workflow__item-container__item' key={key}>
+          <div
+            ref={itemRefs.current[key]}
+            className='main-workflow__item-container__item'
+            key={key}
+          >
             <img
               loading='lazy'
               src={icon}

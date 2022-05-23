@@ -64,7 +64,7 @@ export const Contact = () => {
       <div className='main-contact__text-container'>
         <h2 className='main-contact__text-container__header'>SCHREIB UNS!</h2>
         <p>
-          Haben sie eine Idee? Oder möchten Sie einfach nur einen Kaffe mit uns
+          Haben sie eine Idee? Oder möchten Sie einfach nur einen Kaffee mit uns
           trinken? Gerne können Sie uns via Kontaktformular oder direkt per
           Email kontaktieren. Wir sind aber auch telefonisch für Ihre Fragen und
           Anliegen erreichbar.
