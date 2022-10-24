@@ -5,13 +5,6 @@ import useWindowDimensions from '../../Hooks/useWindowDimensions';
 
 const SERVICES: ServiceCardType[] = [
   {
-    title: 'Maturavideos',
-    image:
-      'https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg',
-    description:
-      'Damit Ihnen eine Erinnerung an die besondere Schulzeit bleibt, fertigen wir für Sie einmalige Maturavideos an, mit denen Sie auf ewig in den Erinnerungen vergangener Tage schwelgen können.',
-  },
-  {
     title: 'Imagefilme',
     image:
       'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
@@ -28,23 +21,29 @@ const SERVICES: ServiceCardType[] = [
   {
     title: 'Werbefilme',
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZ7ppYIlotkeVk_HuQsURuwDxzB8rsJVOPg&usqp=CAU',
+      'https://www.wsp.com/-/media/insights/global/image/img_insights_how_skylines_reflect_and_develop_a_citys_personality_toronto_skyline.jpg',
     description:
       'Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.',
   },
   {
     title: 'Produktfilme',
     image:
-      'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
+      'https://media1.popsugar-assets.com/files/thumbor/OOQXnTHBu7vXAdv1L90js6gEaQs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/012/n/1922441/3541c8d15ea768019e2b41.39479824_GettyImages-/i/city-skyline-pictures.jpg',
     description:
       'Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihrem Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.',
   },
   {
     title: 'Vermarktung',
-    image:
-      'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
+    image: 'https://www.geoguessr.com/seterra/images/quiz/skyline_1.jpg',
     description:
       'Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.',
+  },
+  {
+    title: 'Musikvideos',
+    image:
+      'https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg',
+    description:
+      'Hip-Hop, Jazz oder auch Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ',
   },
 ];
 

@@ -23,6 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &__iframe {
       width: 32%;

@@ -6,7 +6,7 @@ export const AboutUs = () => {
       <div className='main-about-us__text-container'>
         <p>
           OTIOSUM - Eine junge, engagierte Filmproduktion im Ländle. Egal ob
-          Maturavideos, Werbefilme, Imagefilme, oder Produktfilme, wir begleiten
+          Werbefilme, Imagefilme, Musikvideos oder Produktfilme, wir begleiten
           Sie durch den gesamten Prozess von der Konzeption bis hin zum fertigen
           Produkt. Kein Auftrag ist uns zu schwer!
         </p>

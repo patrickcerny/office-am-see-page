@@ -46,26 +46,6 @@ const TEAM: TeamCardType[] = [
       },
     ],
   },
-  {
-    name: 'Patrick Cerny',
-    image: Patrick,
-    job: 'Web-Development, Produktionsassistent',
-    desc: '',
-    links: [
-      {
-        icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png',
-        link: 'https://www.linkedin.com/in/patrick-cerny-70692b1b1/',
-      },
-      {
-        icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png',
-        link: 'https://www.instagram.com/patrick.cerny/',
-      },
-      {
-        icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Whatsapp_svg-512.png',
-        link: 'https://wa.me/067682551906',
-      },
-    ],
-  },
 ];
 export const OurTeam = () => {
   const { width } = useWindowDimensions();
@@ -113,6 +93,13 @@ export const OurTeam = () => {
             links={links}
           ></TeamCard>
         ))}
+        <TeamCard
+          image={Patrick}
+          desc='NUTEEE'
+          job='Web-Developer'
+          name='Patrick Cerny'
+          links={[]}
+        ></TeamCard>
       </div>
     </section>
   );
