@@ -1,22 +1,15 @@
-import useScrollTop from '../../Hooks/useScrollTop';
-import './Quote.scss';
+import useScrollTop from "../../Hooks/useScrollTop";
+import "./Quote.scss";
 
-export const Quote = ({
-  quote,
-  quoteer,
-}: {
-  quote: string;
-  quoteer: string;
-}) => {
+export const Quote = ({ quote }: { quote: string }) => {
   const { scrollY } = useScrollTop();
   return (
     <section
-      className='main-quote'
-      style={{ backgroundPositionY: 500 - scrollY / 6 + 'px' }}
+      className="main-quote"
+      style={{ backgroundPositionY: 800 - scrollY / 6 + "px" }}
     >
-      <div className='main-quote__text-container'>
-        <div className='main-quote__text-container__quote'>"{quote}"</div>
-        <div className='main-quote__text-container__quoteer'>- {quoteer}</div>
+      <div className="main-quote__text-container">
+        <div className="main-quote__text-container__quote">"{quote}"</div>
       </div>
     </section>
   );

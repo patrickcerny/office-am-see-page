@@ -1,49 +1,50 @@
-import { ServiceCardType } from '../../Types/ServiceCardType';
-import './Services.scss';
-import { ServiceCard } from './ServiceCard/ServiceCard';
-import useWindowDimensions from '../../Hooks/useWindowDimensions';
+import { ServiceCardType } from "../../Types/ServiceCardType";
+import "./Services.scss";
+import { ServiceCard } from "./ServiceCard/ServiceCard";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 const SERVICES: ServiceCardType[] = [
   {
-    title: 'Imagefilme',
+    title: "Imagefilme",
     image:
-      'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
     description:
-      'Warum brauchen Sie einen Imagefilm? Ein Imagefilm gibt einen authentischen Einblick in Ihr Unternehmen und hilft Ihre Zielgruppe und deren Aufmerksamkeit zu erreichen.',
+      "Warum brauchen Sie einen Imagefilm? Ein Imagefilm gibt einen authentischen Einblick in Ihr Unternehmen und hilft Ihnen Ihre gewünschte Zielgruppe zu erreichen.",
   },
   {
-    title: 'Veranstaltungsfilme',
+    title: "Veranstaltungsfilme",
     image:
-      'https://images.unsplash.com/photo-1493134799591-2c9eed26201a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMHNreWxpbmV8ZW58MHx8MHx8&w=1000&q=80',
+      "https://images.unsplash.com/photo-1493134799591-2c9eed26201a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMHNreWxpbmV8ZW58MHx8MHx8&w=1000&q=80",
     description:
-      'Ob Messen, Events oder Maturabälle. Wir verewigen einmalige Vorkommnisse. Mit einem Veranstaltungsvideo wollen wir genau das bewirken.',
+      "Ob Messen, Events oder Maturabälle – wir fangen einzigartige Momente ein und bewahren sie für die Ewigkeit in bewegenden Filmen.",
   },
   {
-    title: 'Werbefilme',
+    title: "Werbefilme",
     image:
-      'https://www.wsp.com/-/media/insights/global/image/img_insights_how_skylines_reflect_and_develop_a_citys_personality_toronto_skyline.jpg',
+      "https://www.wsp.com/-/media/insights/global/image/img_insights_how_skylines_reflect_and_develop_a_citys_personality_toronto_skyline.jpg",
     description:
-      'Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.',
+      "Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.",
   },
   {
-    title: 'Produktfilme',
+    title: "Produktfilme",
     image:
-      'https://media1.popsugar-assets.com/files/thumbor/OOQXnTHBu7vXAdv1L90js6gEaQs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/012/n/1922441/3541c8d15ea768019e2b41.39479824_GettyImages-/i/city-skyline-pictures.jpg',
+      "https://media1.popsugar-assets.com/files/thumbor/OOQXnTHBu7vXAdv1L90js6gEaQs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/012/n/1922441/3541c8d15ea768019e2b41.39479824_GettyImages-/i/city-skyline-pictures.jpg",
     description:
-      'Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihrem Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.',
+      "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihrem Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
   },
   {
-    title: 'Vermarktung',
-    image: 'https://www.geoguessr.com/seterra/images/quiz/skyline_1.jpg',
+    title: "Vermarktung",
+    image:
+      "https://static.toiimg.com/thumb/msid-38487526,width-748,height-499,resizemode=4,imgsize-248462/.jpg",
     description:
-      'Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.',
+      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
   },
   {
-    title: 'Musikvideos',
+    title: "Musikvideos",
     image:
-      'https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg',
+      "https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg",
     description:
-      'Hip-Hop, Jazz oder auch Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ',
+      "Hip-Hop, Jazz oder auch Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
   },
 ];
 
@@ -51,8 +52,8 @@ export const Services = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <section className='main-services' id='services'>
-      <h2 className='main-services__header'>UNSERE SERVICES</h2>
+    <section className="main-services" id="services">
+      <h2 className="main-services__header">UNSERE SERVICES</h2>
       <p>
         In einem ausführlichen Beratungsgespräch erstellen wir Konzepte und
         festigen die gelieferten Ideen. Auf dieser Grundlage entwickeln wir Ihr
@@ -67,17 +68,17 @@ export const Services = () => {
         finden kann, welche Sie ansprechen wollen.
       </p>
       <div
-        className='main-services__card-container'
+        className="main-services__card-container"
         style={{
-          alignItems: width < 1250 ? 'center' : '',
-          justifyContent: width < 1250 ? 'center' : 'flex-start',
+          alignItems: width < 1250 ? "center" : "",
+          justifyContent: width < 1250 ? "center" : "flex-start",
         }}
       >
         <div
-          className='main-services__card-container__cards'
+          className="main-services__card-container__cards"
           style={{
-            flexDirection: width < 1250 ? 'column' : 'row',
-            width: width < 1250 ? '70%' : 'auto',
+            flexDirection: width < 1250 ? "column" : "row",
+            width: width < 1250 ? "70%" : "auto",
           }}
         >
           <ServiceCard
@@ -100,10 +101,10 @@ export const Services = () => {
           ></ServiceCard>
         </div>
         <div
-          className='main-services__card-container__cards'
+          className="main-services__card-container__cards"
           style={{
-            flexDirection: width < 1250 ? 'column' : 'row',
-            width: width < 1250 ? '70%' : 'auto',
+            flexDirection: width < 1250 ? "column" : "row",
+            width: width < 1250 ? "70%" : "auto",
           }}
         >
           <ServiceCard

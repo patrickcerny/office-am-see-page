@@ -1,4 +1,5 @@
 export * from './LandingImage/LandingImage';
+export * from './NominationsAndAwards/NominationsAndAwards';
 export * from './AboutUs/AboutUs';
 export * from './OurTeam/OurTeam';
 export * from './Quote/Quote';

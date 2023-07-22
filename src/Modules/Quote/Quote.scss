@@ -23,14 +23,10 @@
             letter-spacing: 3px;
             font-size: larger;
             font-weight: 100;
+            text-align: center;
 
         }
-        &__quoteer{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font-style: italic;
-        }
+       
     }
 
 }

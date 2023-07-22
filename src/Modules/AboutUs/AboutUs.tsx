@@ -1,9 +1,9 @@
-import './AboutUs.scss';
+import "./AboutUs.scss";
 export const AboutUs = () => {
   return (
-    <section className='main-about-us' id='aboutUs'>
-      <h2 className='main-about-us__header'>HIER BIST DU RICHTIG!</h2>
-      <div className='main-about-us__text-container'>
+    <section className="main-about-us" id="aboutUs">
+      <h2 className="main-about-us__header">HIER SIND SIE RICHTIG!</h2>
+      <div className="main-about-us__text-container">
         <p>
           OTIOSUM - Eine junge, engagierte Filmproduktion im Ländle. Egal ob
           Werbefilme, Imagefilme, Musikvideos oder Produktfilme, wir begleiten
