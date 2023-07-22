@@ -1,33 +1,33 @@
-import { Link } from 'react-router-dom';
-import useWindowDimensions from '../../Hooks/useWindowDimensions';
-import './Footer.scss';
+import { Link } from "react-router-dom";
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
+import "./Footer.scss";
 
 const Footer = () => {
   const { mobile } = useWindowDimensions();
   return (
-    <footer className='main-footer'>
-      <div className='main-footer__container'>
+    <footer className="main-footer">
+      <div className="main-footer__container">
         <div
-          className='main-footer__container__upper'
-          style={{ flexDirection: mobile ? 'column' : 'row' }}
+          className="main-footer__container__upper"
+          style={{ flexDirection: mobile ? "column" : "row" }}
         >
           <span>
-            <Link to='/impressum'>Impressum</Link>
+            <Link to="/impressum">Impressum</Link>
           </span>
 
           <span>
-            <a href='tel:067682551906'>+43 676 620 71 22</a>
+            <a href="tel:+4367682551906">+43 676 82 55 19 06</a>
           </span>
           <span>
-            <a href='mailto:hello@otiosum-austria.com'>
+            <a href="mailto:hello@otiosum-austria.com">
               hello@otiosum-austria.com
             </a>
           </span>
         </div>
-        <div className='main-footer__container__lower'>
-          <span>© 2022 OTIOSUM. All rights reserved.</span>
+        <div className="main-footer__container__lower">
+          <span>© 2023 OTIOSUM. All rights reserved.</span>
           <span>
-            Made with ❤️ by <a href='https://patrickcerny.at/'>Patrick Cerny</a>
+            Made with ❤️ by <a href="https://patrickcerny.at/">Patrick Cerny</a>
           </span>
         </div>
       </div>
