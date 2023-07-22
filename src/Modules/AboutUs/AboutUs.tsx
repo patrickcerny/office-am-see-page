@@ -5,10 +5,10 @@ export const AboutUs = () => {
       <h2 className="main-about-us__header">HIER SIND SIE RICHTIG!</h2>
       <div className="main-about-us__text-container">
         <p>
-          OTIOSUM - Eine junge, engagierte Filmproduktion im Ländle. Egal ob
-          Werbefilme, Imagefilme, Musikvideos oder Produktfilme, wir begleiten
-          Sie durch den gesamten Prozess von der Konzeption bis hin zum fertigen
-          Produkt. Kein Auftrag ist uns zu schwer!
+          OTIOSUM - Eine junge, engagierte Filmproduktion aus dem Ländle. Egal
+          ob Werbefilme, Imagefilme, Musikvideos oder Produktfilme, wir
+          begleiten Sie durch den gesamten Prozess von der Konzeption bis hin
+          zum fertigen Produkt. Kein Auftrag ist uns zu schwierig!
         </p>
       </div>
     </section>
