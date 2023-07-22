@@ -19,8 +19,6 @@
     @include Description;
     @include ContentWidth;
     margin: 20px 0 40px 0;
-    text-align: justify;
-    text-align-last: none;
   }
   &__card-container {
     display: flex;
