@@ -8,7 +8,7 @@
   justify-content: center;
 
   background-size: cover;
-  background-color: $main-gray;
+  background-color: white;
 
   padding: 40px 0;
 
@@ -25,10 +25,13 @@
 
     &__laurel{
       width: 200px;
-      margin: 45px 140px;
-      filter: invert(1);
+      margin: 45px 100px;
     }
   }
+}
+
+.invert{
+  filter: invert(1);
 }
 
 .smaller {

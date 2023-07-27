@@ -38,17 +38,22 @@ export const NominationsAndAwards = () => {
         }}
       >
         <img
-          className="main-laurels__laurel-container__laurel"
+          className="main-laurels__laurel-container__laurel invert"
           src="https://cdn.discordapp.com/attachments/783334533613223946/1132280500891963413/Honorable_Mention_-_White.png"
           alt=""
         />
         <img
-          className="main-laurels__laurel-container__laurel smaller"
+          className="main-laurels__laurel-container__laurel invert smaller"
           src="https://cdn.discordapp.com/attachments/783334533613223946/1132280500195708968/SESSIONS_2023_OS_LAUREL_W.png"
           alt=""
         />
         <img
           className="main-laurels__laurel-container__laurel"
+          src="https://cdn.discordapp.com/attachments/783334533613223946/1134214064747323412/SemiFinalist_2023_AFF_weiss.jpg"
+          alt=""
+        />
+        <img
+          className="main-laurels__laurel-container__laurel invert"
           src="https://cdn.discordapp.com/attachments/783334533613223946/1132280500531232788/Official_Selection_-_White.png"
           alt=""
         />
