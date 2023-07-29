@@ -33,18 +33,18 @@ const SERVICES: ServiceCardType[] = [
       "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihrem Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
   },
   {
-    title: "Vermarktung",
-    image:
-      "https://static.toiimg.com/thumb/msid-38487526,width-748,height-499,resizemode=4,imgsize-248462/.jpg",
-    description:
-      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
-  },
-  {
     title: "Musikvideos",
     image:
       "https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg",
     description:
       "Hip-Hop, Jazz oder auch Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
+  },
+  {
+    title: "Websites",
+    image:
+      "https://static.toiimg.com/thumb/msid-38487526,width-748,height-499,resizemode=4,imgsize-248462/.jpg",
+    description:
+      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
   },
 ];
 

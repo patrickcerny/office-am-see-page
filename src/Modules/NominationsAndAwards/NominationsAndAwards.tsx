@@ -2,29 +2,6 @@ import { createRef, useEffect, useRef } from "react";
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import "./NominationsAndAwards.scss";
 
-const ITEMS: { icon: any; label: string }[] = [
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/1688/1688488.png",
-    label: "Konzeption",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/4838/4838756.png",
-    label: "Vor-Produktion",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/2699/2699237.png",
-    label: "Produktion",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/977/977597.png",
-    label: "Post-Produktion",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/1997/1997928.png",
-    label: "Vermarktung",
-  },
-];
-
 export const NominationsAndAwards = () => {
   const { width } = useWindowDimensions();
 
