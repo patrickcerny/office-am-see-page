@@ -49,7 +49,7 @@ export const NominationsAndAwards = () => {
         />
         <img
           className="main-laurels__laurel-container__laurel"
-          src="https://cdn.discordapp.com/attachments/783334533613223946/1134214064747323412/SemiFinalist_2023_AFF_weiss.jpg"
+          src="https://media.discordapp.net/attachments/783334533613223946/1134801638993952832/LaurelTransparent.png?width=624&height=468"
           alt=""
         />
         <img
