@@ -22,8 +22,8 @@ const VIDEOS: { link: string; desc: string }[] = [
   },
   {
     //get out and add Hard Rocks
-    link: "https://www.youtube.com/embed/NTV0AKNJFng",
-    desc: "BG Blumenstraße - Maturavideo 2022",
+    link: "https://www.youtube.com/embed/2HaciSB8M8o",
+    desc: "BG Gallusstraße - Maturavideo 2022",
   },
   {
     link: "https://www.youtube.com/embed/VelnqVTSYww",
