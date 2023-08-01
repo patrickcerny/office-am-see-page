@@ -15,8 +15,13 @@ export const NominationsAndAwards = () => {
         }}
       >
         <img
-          className="main-laurels__laurel-container__laurel invert"
-          src="https://cdn.discordapp.com/attachments/783334533613223946/1132280500891963413/Honorable_Mention_-_White.png"
+          className="main-laurels__laurel-container__laurel"
+          src="https://media.discordapp.net/attachments/783334533613223946/1134801638993952832/LaurelTransparent.png?width=624&height=468"
+          alt=""
+        />
+        <img
+          className="main-laurels__laurel-container__laurel "
+          src="https://cdn.discordapp.com/attachments/783334533613223946/1135872919470346301/AFF_Laurels_transparent2_Official2023.png"
           alt=""
         />
         <img
@@ -25,8 +30,8 @@ export const NominationsAndAwards = () => {
           alt=""
         />
         <img
-          className="main-laurels__laurel-container__laurel"
-          src="https://media.discordapp.net/attachments/783334533613223946/1134801638993952832/LaurelTransparent.png?width=624&height=468"
+          className="main-laurels__laurel-container__laurel invert"
+          src="https://cdn.discordapp.com/attachments/783334533613223946/1132280500891963413/Honorable_Mention_-_White.png"
           alt=""
         />
         <img
