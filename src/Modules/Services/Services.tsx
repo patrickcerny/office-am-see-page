@@ -1,9 +1,8 @@
-import { ServiceCardType } from "../../Types/ServiceCardType";
 import "./Services.scss";
 import { ServiceCard } from "./ServiceCard/ServiceCard";
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
-const SERVICES: ServiceCardType[] = [
+const SERVICES: { title: string; image: string; description: string }[] = [
   {
     title: "Imagefilme",
     image:
@@ -82,18 +81,24 @@ export const Services = () => {
           }}
         >
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[0].description}
             image={SERVICES[0].image}
             title={SERVICES[0].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[1].description}
             image={SERVICES[1].image}
             title={SERVICES[1].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[2].description}
             image={SERVICES[2].image}
             title={SERVICES[2].title}
@@ -108,18 +113,24 @@ export const Services = () => {
           }}
         >
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[3].description}
             image={SERVICES[3].image}
             title={SERVICES[3].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[4].description}
             image={SERVICES[4].image}
             title={SERVICES[4].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
+            aosType="fade-up"
+            aosDelay="100"
             description={SERVICES[5].description}
             image={SERVICES[5].image}
             title={SERVICES[5].title}

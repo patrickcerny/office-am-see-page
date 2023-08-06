@@ -5,6 +5,10 @@ import Header from "./Components/Header/Header";
 import * as Modules from "./Modules";
 import Datenschutz from "./Pages/Datenschutz/Datenschutz";
 import Impressum from "./Pages/Impressum/Impressum";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+AOS.init();
 
 function App() {
   return (

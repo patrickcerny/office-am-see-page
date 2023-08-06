@@ -1,12 +1,14 @@
-import { useState } from 'react';
-import { ServiceCardType } from '../../../Types/ServiceCardType';
-import './ServiceCard.scss';
+import { useState } from "react";
+import { ServiceCardType } from "../../../Types/ServiceCardType";
+import "./ServiceCard.scss";
 
 export const ServiceCard = ({
   title,
   image,
   mobile,
   description,
+  aosDelay,
+  aosType,
 }: ServiceCardType) => {
   const [hover, setHover] = useState(false);
 
@@ -18,26 +20,28 @@ export const ServiceCard = ({
     <div
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
-      className='main-service-card'
+      className="main-service-card"
       style={{
         backgroundImage:
-          ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' +
+          " linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" +
           image +
-          ')',
+          ")",
         backgroundSize: mobile
-          ? 'background-size:  100% 100%'
-          : 'background-size: auto 100%',
-        flex: mobile ? 'none' : '1 1 100%',
-        width: mobile ? '300px' : '100%',
-        margin: mobile ? '5px 0 ' : '',
+          ? "background-size:  100% 100%"
+          : "background-size: auto 100%",
+        flex: mobile ? "none" : "1 1 100%",
+        width: mobile ? "300px" : "100%",
+        margin: mobile ? "5px 0 " : "",
       }}
     >
       <div
-        className={`main-service-card__title ${hover ? 'title-hover' : ''} `}
+        className={`main-service-card__title ${hover ? "title-hover" : ""} `}
       >
-        <h3>{title}</h3>
+        <h3 data-aos={aosType} data-aos-delay={mobile ? "10" : aosDelay}>
+          {title}
+        </h3>
       </div>
-      <div className={`main-service-card__desc ${hover ? 'desc-hover' : ''}`}>
+      <div className={`main-service-card__desc ${hover ? "desc-hover" : ""}`}>
         <span>{description}</span>
       </div>
     </div>
