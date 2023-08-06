@@ -27,6 +27,7 @@ function App() {
               <>
                 <Modules.LandingImage></Modules.LandingImage>
                 <Modules.AboutUs></Modules.AboutUs>
+                <Modules.InfiniteSlider></Modules.InfiniteSlider>
                 <Modules.OurTeam></Modules.OurTeam>
                 <Modules.Quote
                   quote={
@@ -34,7 +35,7 @@ function App() {
                   }
                 ></Modules.Quote>
                 <Modules.Services></Modules.Services>
-                <Modules.NominationsAndAwards></Modules.NominationsAndAwards>
+                {/* <Modules.NominationsAndAwards></Modules.NominationsAndAwards> */}
                 <Modules.Workflow></Modules.Workflow>
                 <Modules.OurWork></Modules.OurWork>
                 <Modules.Contact></Modules.Contact>

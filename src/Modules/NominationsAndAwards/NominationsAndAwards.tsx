@@ -1,4 +1,3 @@
-import { createRef, useEffect, useRef } from "react";
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 import "./NominationsAndAwards.scss";
 
