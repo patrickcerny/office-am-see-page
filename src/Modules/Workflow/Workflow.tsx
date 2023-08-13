@@ -9,7 +9,7 @@ const ITEMS: { icon: any; label: string }[] = [
   },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/4838/4838756.png",
-    label: "Vor-Produktion",
+    label: "Pre-Produktion",
   },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/2699/2699237.png",

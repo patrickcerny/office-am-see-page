@@ -84,9 +84,9 @@ export const OurTeam = () => {
       <h2 className="main-our-team__header">ÜBER UNS</h2>
       <div className="main-our-team__text">
         <p>
-          Als Schüler der Handelsakademie für Digital Business und
-          Wirtschaftsinformatik haben wir bereits eine jahrelange
-          Berufserfahrung. Unsere Expertise ermöglicht es uns für Sie
+          Als Absolventen der Handelsakademie für Digital Business mit
+          Spezialisierung auf Internet und Multimedia haben wir bereits eine
+          jahrelange Berufserfahrung. Unsere Expertise ermöglicht es
           konkurrenzfähige Resultate zu produzieren, mit denen Sie am Markt
           hervorstechen werden.
         </p>

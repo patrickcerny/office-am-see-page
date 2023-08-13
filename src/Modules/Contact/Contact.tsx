@@ -21,7 +21,7 @@ export const Contact = () => {
   useEffect(() => {
     setTextareaWidth(emailRef.current.offsetWidth);
 
-    const isMailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+    const isMailValid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
       email
     );
 

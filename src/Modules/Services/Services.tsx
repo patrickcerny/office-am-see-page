@@ -29,21 +29,21 @@ const SERVICES: { title: string; image: string; description: string }[] = [
     image:
       "https://media1.popsugar-assets.com/files/thumbor/OOQXnTHBu7vXAdv1L90js6gEaQs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/012/n/1922441/3541c8d15ea768019e2b41.39479824_GettyImages-/i/city-skyline-pictures.jpg",
     description:
-      "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihrem Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
+      "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihren Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
   },
   {
     title: "Musikvideos",
     image:
       "https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg",
     description:
-      "Hip-Hop, Jazz oder auch Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
+      "Hip-Hop, Jazz oder Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
   },
   {
     title: "Websites",
     image:
       "https://static.toiimg.com/thumb/msid-38487526,width-748,height-499,resizemode=4,imgsize-248462/.jpg",
     description:
-      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit auch Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
+      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
   },
 ];
 
@@ -57,14 +57,14 @@ export const Services = () => {
         In einem ausführlichen Beratungsgespräch erstellen wir Konzepte und
         festigen die gelieferten Ideen. Auf dieser Grundlage entwickeln wir Ihr
         gewünschtes Produkt. Neben unserem Allround-Service, welcher die
-        Vorproduktion, als auch den Dreh und die komplette Post Produktion
+        Pre-Produktion, als auch den Dreh und die komplette Post-Produktion
         inkludiert, helfen wir gerne auch bei individuellen Wünschen weiter.
         Doch wir produzieren nicht nur Filme: <br />
         <br /> Otiosum sorgt auch dafür, dass Ihre Filme gesehen werden. Nach
         der Fertigstellung des Videoprojektes, bieten wir Ihnen einen
         vollständigen Web-Auftritt an. Unser Web-Developement führt Sie vom
         Web-Design bis zur fertigen Webseite, damit Ihr Video auch die Kunden
-        finden kann, welche Sie ansprechen wollen.
+        erreicht, die Sie erreichen wollen.
       </p>
       <div
         className="main-services__card-container"

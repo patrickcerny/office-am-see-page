@@ -8,7 +8,7 @@ export const AboutUs = () => {
           OTIOSUM - Eine junge, engagierte Filmproduktion aus dem Ländle. Egal
           ob Werbefilme, Imagefilme, Musikvideos oder Produktfilme, wir
           begleiten Sie durch den gesamten Prozess von der Konzeption bis hin
-          zum fertigen Produkt. Kein Auftrag ist uns zu schwierig!
+          zum fertigen Produkt.
         </p>
       </div>
     </section>
