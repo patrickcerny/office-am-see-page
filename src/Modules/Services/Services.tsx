@@ -6,42 +6,42 @@ const SERVICES: { title: string; image: string; description: string }[] = [
   {
     title: "Imagefilme",
     image:
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845705929207919/Website_Imagefilm.png",
     description:
       "Warum brauchen Sie einen Imagefilm? Ein Imagefilm gibt einen authentischen Einblick in Ihr Unternehmen und hilft Ihnen Ihre gewünschte Zielgruppe zu erreichen.",
   },
   {
     title: "Veranstaltungsfilme",
     image:
-      "https://images.unsplash.com/photo-1493134799591-2c9eed26201a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMHNreWxpbmV8ZW58MHx8MHx8&w=1000&q=80",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845760891363378/Website_veranstaltungsvideos.png",
     description:
       "Ob Messen, Events oder Maturabälle – wir fangen einzigartige Momente ein und bewahren sie für die Ewigkeit in bewegenden Filmen.",
   },
   {
     title: "Werbefilme",
     image:
-      "https://www.wsp.com/-/media/insights/global/image/img_insights_how_skylines_reflect_and_develop_a_citys_personality_toronto_skyline.jpg",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845848023834725/Website_Werbevideos.png",
     description:
       "Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.",
   },
   {
     title: "Produktfilme",
     image:
-      "https://media1.popsugar-assets.com/files/thumbor/OOQXnTHBu7vXAdv1L90js6gEaQs/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/27/012/n/1922441/3541c8d15ea768019e2b41.39479824_GettyImages-/i/city-skyline-pictures.jpg",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845718373703691/Website_Produktvideo.png",
     description:
       "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihren Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
   },
   {
     title: "Musikvideos",
     image:
-      "https://cdn.pixabay.com/photo/2018/05/13/10/34/skyline-3395893_960_720.jpg",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845740796448798/Website_Musikvideo.png",
     description:
       "Hip-Hop, Jazz oder Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
   },
   {
     title: "Websites",
     image:
-      "https://static.toiimg.com/thumb/msid-38487526,width-748,height-499,resizemode=4,imgsize-248462/.jpg",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1145749048054259842/websites.jpeg",
     description:
       "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
   },

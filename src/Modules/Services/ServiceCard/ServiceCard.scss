@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: auto 100%;
+    background-size: auto 110%;
     filter: grayscale(100%);
     transition: filter 0.2s ease-in-out;
     -webkit-transition: filter 0.2s ease-in-out;
@@ -14,8 +14,7 @@
     transition: background-size 0.2s ease-in-out;
     -webkit-transition: background-size 0.2s ease-in-out;
     &:hover {
-        background-size:auto  105%;
-
+        background-size: auto  105%;
         filter: grayscale(70%);
         -webkit-filter: grayscale(70%);
     }

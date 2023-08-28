@@ -4,6 +4,14 @@ import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 const VIDEOS: { link: string; desc: string }[] = [
   {
+    link: "https://www.youtube.com/embed/lHgCTIlu6LA",
+    desc: "Montafon Tourismus - 2023",
+  },
+  {
+    link: "https://www.youtube.com/embed/FVbHvHqNtnw",
+    desc: "Hard Rocks - 2023",
+  },
+  {
     link: "https://www.youtube.com/embed/SPPwFM4xIw8",
     desc: "Die Maturaformel - BG Blumenstraße 2022",
   },
@@ -12,22 +20,12 @@ const VIDEOS: { link: string; desc: string }[] = [
     desc: "Österreichischer Klimarat - 2022",
   },
   {
-    link: "https://www.youtube.com/embed/xfaLGnRPLsM",
-    desc: "Wiener Blut, der Gin - 2021",
-  },
-
-  {
     link: "https://www.youtube.com/embed/5rIGGDtoUqw",
     desc: "Dokumentation Konferenz USA - 2022",
   },
   {
-    //get out and add Hard Rocks
-    link: "https://www.youtube.com/embed/lHgCTIlu6LA",
-    desc: "Montafon Tourismus - 2023",
-  },
-  {
-    link: "https://www.youtube.com/embed/VelnqVTSYww",
-    desc: "Österreichischer Klimarat - 2022",
+    link: "https://www.youtube.com/embed/xfaLGnRPLsM",
+    desc: "Wiener Blut, der Gin - 2021",
   },
 ];
 
