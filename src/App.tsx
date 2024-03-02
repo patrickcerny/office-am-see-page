@@ -21,6 +21,7 @@ function App() {
             { text: "Home", to: "" },
             { text: "Über Uns", to: "#aboutUs" },
             { text: "Services", to: "#services" },
+            { text: "Unsere Arbeit", to: "#work" },
             { text: "Kontakt", to: "#contact" },
           ]}
         ></Header>

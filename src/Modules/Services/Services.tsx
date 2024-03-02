@@ -6,42 +6,42 @@ const SERVICES: { title: string; image: string; description: string }[] = [
   {
     title: "Imagefilme",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845705929207919/Website_Imagefilm.png",
+      "https://cdn.discordapp.com/attachments/783334533613223946/1143845705929207919/Website_Imagefilm.png?ex=65f177d3&is=65df02d3&hm=79c0442c99fbdaa7b45e8de9fa3899648c17443d305ddcf3bdf8b7955a21f8cb&",
     description:
       "Warum brauchen Sie einen Imagefilm? Ein Imagefilm gibt einen authentischen Einblick in Ihr Unternehmen und hilft Ihnen Ihre gewünschte Zielgruppe zu erreichen.",
   },
   {
     title: "Veranstaltungsfilme",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845760891363378/Website_veranstaltungsvideos.png",
+      "https://media.discordapp.net/attachments/783334533613223946/1143845760891363378/Website_veranstaltungsvideos.png?ex=65f177e1&is=65df02e1&hm=63c287a7f8d6e65b539efd929e7382c1e9f82f26249a835f79e27d05724ff866&=&format=webp&quality=lossless",
     description:
       "Ob Messen, Events oder Maturabälle – wir fangen einzigartige Momente ein und bewahren sie für die Ewigkeit in bewegenden Filmen.",
   },
   {
     title: "Werbefilme",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845848023834725/Website_Werbevideos.png",
+      "https://media.discordapp.net/attachments/783334533613223946/1143845848023834725/Website_Werbevideos.png?ex=65f177f5&is=65df02f5&hm=18153c32e1ca20e8231b39b6de94d1ee7eb2a49611f7c3ba6dc98c8d133d1f87&=&format=webp&quality=lossless",
     description:
       "Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.",
   },
   {
     title: "Produktfilme",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845718373703691/Website_Produktvideo.png",
+      "https://media.discordapp.net/attachments/783334533613223946/1143845718373703691/Website_Produktvideo.png?ex=65f177d6&is=65df02d6&hm=e3a561887840d67e1cc63b2bcf76012983a755b48bd4b37078f4c0da5a980987&=&format=webp&quality=lossless",
     description:
       "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihren Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
   },
   {
     title: "Musikvideos",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845740796448798/Website_Musikvideo.png",
+      "https://media.discordapp.net/attachments/783334533613223946/1143845740796448798/Website_Musikvideo.png?ex=65f177dc&is=65df02dc&hm=fa0e1117565c217cb88b380e6dc063203a7961af5d24a5ca219640b82606ce62&=&format=webp&quality=lossless",
     description:
-      "Hip-Hop, Jazz oder Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.  ",
+      "Hip-Hop, Jazz oder Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.",
   },
   {
     title: "Websites",
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1145749048054259842/websites.jpeg",
+      "https://media.discordapp.net/attachments/783334533613223946/1145749048054259842/websites.jpeg?ex=65ef29f4&is=65dcb4f4&hm=ad696f4d9bfce1346baeff7a26be26605f02d469057ab2305383ce0d9f410480&=&format=webp",
     description:
       "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
   },

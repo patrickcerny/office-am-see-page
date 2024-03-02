@@ -20,8 +20,8 @@ const VIDEOS: { link: string; desc: string }[] = [
     desc: "Österreichischer Klimarat - 2022",
   },
   {
-    link: "https://www.youtube.com/embed/5rIGGDtoUqw",
-    desc: "Dokumentation Konferenz USA - 2022",
+    link: "https://www.youtube.com/embed/qmp_BmocJyg",
+    desc: "Maturavideo 5ea - HAK Bregenz 2024",
   },
   {
     link: "https://www.youtube.com/embed/xfaLGnRPLsM",
@@ -35,7 +35,7 @@ export const OurWork = () => {
 
   const { width } = useWindowDimensions();
   return (
-    <section className="main-our-work">
+    <section className="main-our-work" id="work">
       <h2 className="main-our-work__header">KÜRZLICHE ARBEITEN</h2>
       <div
         className="main-our-work__videos"

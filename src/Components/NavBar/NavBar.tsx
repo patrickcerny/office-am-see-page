@@ -11,6 +11,10 @@ const NavBar = () => {
       id: 'services',
       label: 'Our Services',
     },
+    {
+      id: 'work',
+      label: 'Our Work',
+    },
     { id: 'contact', label: 'Contact Us' },
   ];
   return (
