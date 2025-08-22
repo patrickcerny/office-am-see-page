@@ -45,10 +45,10 @@ jobs:
             if [ -n "${GHCR_TOKEN}" ] && [ -n "${GHCR_USERNAME}" ]; then
               echo "${GHCR_TOKEN}" | docker login ghcr.io -u "${GHCR_USERNAME}" --password-stdin
             fi
-            docker pull ghcr.io/patrickcerny/office-am-see-app:latest
-            docker stop office-am-see-app || true
-            docker rm ooffice-am-see-app || true
-            docker run -d --name office-am-see-app -p 8090:80 ghcr.io/patrickcerny/office-am-see-app:latest
+            docker pull ghcr.io/patrickcerny/office-am-see-page:latest
+            docker stop office-am-see-page || true
+            docker rm ooffice-am-see-page || true
+            docker run -d --name office-am-see-page -p 8090:80 ghcr.io/patrickcerny/office-am-see-page:latest
         env:
           GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }} # PAT username (if image is private)
           GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }} # PAT with read:packages
