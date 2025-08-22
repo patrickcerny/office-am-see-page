@@ -7,8 +7,8 @@ export const LandingImage = () => {
   const { width } = useWindowDimensions();
 
   const text: { upper: string; lower: string } = {
-    upper: "DER ERSTE EINDRUCK ZÄHLT",
-    lower: "DER LETZTE BLEIBT",
+    upper: "IHRE ZAHLEN IN BESTEN HÄNDEN",
+    lower: "ENTLASTUNG FÜR IHR BÜRO",
   };
 
   const handleMouseEnter = (e: any) => {

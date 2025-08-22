@@ -10,14 +10,14 @@ const Impressum = () => {
         §25 Mediengesetz.
       </p>
       <p className='adsimple-122010868'>
-        Otiosum
+        Office am See
         <br />
         Seeschanze 1, Top 12/13, <br />
         6900 Bregenz, <br />
         Österreich
       </p>
       <p className='adsimple-122010868'>
-        <strong>Unternehmensgegenstand:</strong> Video &amp; IT Dienstleistungen
+        <strong>Unternehmensgegenstand:</strong> Buchhaltungs- &amp; Büroservice
         <br />
         <strong>UID-Nummer:</strong> ATU12345678
         <br />
@@ -35,7 +35,7 @@ const Impressum = () => {
         <strong>Tel.:</strong> 06768251906
         <br />
         <strong>E-Mail:</strong>{' '}
-        <a href='mailto:hello@otiosum-austia.com'>hello@otiosum-austia.com</a>
+        <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
       </p>
       <p className='adsimple-122010868'>
         <strong>Berufsrecht:</strong> Gewerbeordnung: www.ris.bka.gv.at
@@ -44,7 +44,7 @@ const Impressum = () => {
         <strong>Aufsichtsbehörde/Gewerbebehörde:</strong> Bezirkshauptmannschaft
         Bregenz
         <br />
-        <strong>Berufsbezeichnung:</strong> Kameramann
+        <strong>Berufsbezeichnung:</strong> Buchhalter
         <br />
         <strong>Verleihungsstaat:</strong> Österreich
       </p>
@@ -71,17 +71,17 @@ const Impressum = () => {
         Vertretungsberechtigt: Patrick Cerny
         <br />
         E-Mail-Adresse:{' '}
-        <a href='mailto:cerny@otiosum-austria.at'>cerny@otiosum-austria.at</a>
+        <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
         <br />
         Telefon: 067682551906
         <br />
         Impressum:{' '}
         <a
-          href='https://otiosum-austria.com/impressum'
+          href='https://officeamsee.com/impressum'
           target='_self'
           rel='noopener'
         >
-          https://otiosum-austria.com/impressum
+          https://officeamsee.com/impressum
         </a>
       </p>
       <h2 id='eu-streitschlichtung' className='adsimple-122010868'>
@@ -155,10 +155,10 @@ const Impressum = () => {
         Urheberrechtshinweis
       </h2>
       <p>
-        Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen
-        dem Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser
-        Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf
-        anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die
+        Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen dem
+        Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website
+        verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen
+        Websites erneut veröffentlichen. Falls notwendig, werden wir die
         unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich
         verfolgen.
       </p>
@@ -384,14 +384,13 @@ const Impressum = () => {
           Vertretungsberechtigt: Patrick Cerny
         </span>
         <br />
-        E-Mail:{' '}
-        <a href='mailto:cerny@otiosum-austria.at'>cerny@otiosum-austria.at</a>
+        E-Mail: <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
         <br />
         Telefon: <a href='tel:067682551906'>067682551906</a>
         <br />
         Impressum:{' '}
-        <a href='https://otiosum-austria.com/impressum'>
-          https://otiosum-austria.com/impressum
+        <a href='https://officeamsee.com/impressum'>
+          https://officeamsee.com/impressum
         </a>
       </p>
       <h2 id='speicherdauer' className='adsimple-122010868'>

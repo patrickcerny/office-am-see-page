@@ -1,49 +1,49 @@
-import "./Services.scss";
-import { ServiceCard } from "./ServiceCard/ServiceCard";
-import useWindowDimensions from "../../Hooks/useWindowDimensions";
+import './Services.scss';
+import { ServiceCard } from './ServiceCard/ServiceCard';
+import useWindowDimensions from '../../Hooks/useWindowDimensions';
 
 const SERVICES: { title: string; image: string; description: string }[] = [
   {
-    title: "Imagefilme",
+    title: 'Buchhaltung',
     image:
-      "https://cdn.discordapp.com/attachments/783334533613223946/1143845705929207919/Website_Imagefilm.png?ex=65f177d3&is=65df02d3&hm=79c0442c99fbdaa7b45e8de9fa3899648c17443d305ddcf3bdf8b7955a21f8cb&",
+      'https://media.istockphoto.com/id/1432903655/de/foto/finanzen-buchhaltung-und-fintech-ein-mann-am-computer-und-taschenrechner-der-seine.jpg?s=612x612&w=0&k=20&c=RM00Op1J6B-VeddhZsYE4IEg5bw3TsVV6r6jQWYvszQ=',
     description:
-      "Warum brauchen Sie einen Imagefilm? Ein Imagefilm gibt einen authentischen Einblick in Ihr Unternehmen und hilft Ihnen Ihre gewünschte Zielgruppe zu erreichen.",
+      'Wir übernehmen Ihre laufende Finanzbuchhaltung und sorgen für klare Zahlen.',
   },
   {
-    title: "Veranstaltungsfilme",
+    title: 'Lohnverrechnung',
     image:
-      "https://media.discordapp.net/attachments/783334533613223946/1143845760891363378/Website_veranstaltungsvideos.png?ex=65f177e1&is=65df02e1&hm=63c287a7f8d6e65b539efd929e7382c1e9f82f26249a835f79e27d05724ff866&=&format=webp&quality=lossless",
+      'https://media.istockphoto.com/id/1364970875/de/foto/gehaltsscheck-im-umschlag.jpg?s=612x612&w=0&k=20&c=CSy3Jf9zUs_MCD11cVr41-DsQnN-kzfjirlXyyMM9R8=',
     description:
-      "Ob Messen, Events oder Maturabälle – wir fangen einzigartige Momente ein und bewahren sie für die Ewigkeit in bewegenden Filmen.",
+      'Pünktliche und korrekte Gehaltsabrechnungen für Ihre Mitarbeiter.',
   },
   {
-    title: "Werbefilme",
+    title: 'Steuererklärungen',
     image:
-      "https://media.discordapp.net/attachments/783334533613223946/1143845848023834725/Website_Werbevideos.png?ex=65f177f5&is=65df02f5&hm=18153c32e1ca20e8231b39b6de94d1ee7eb2a49611f7c3ba6dc98c8d133d1f87&=&format=webp&quality=lossless",
+      'https://media.istockphoto.com/id/1002720376/de/foto/deutsche-steuererkl%C3%A4rung.jpg?s=612x612&w=0&k=20&c=NG2l1a2FZLchSKTCPbrInzqYm1GDzQMmUm2KX5JENkM=',
     description:
-      "Mit unseren Werbefilmen geben wir Ihre Werbebotschaft kurz und knackig wieder. Dabei achten wir auf eine klare Kernaussage und eine Reduzierung auf das Wesentliche.",
+      'Wir bereiten Ihre Steuererklärungen vor und begleiten Sie durch das Steuerjahr.',
   },
   {
-    title: "Produktfilme",
+    title: 'Finanzplanung',
     image:
-      "https://media.discordapp.net/attachments/783334533613223946/1143845718373703691/Website_Produktvideo.png?ex=65f177d6&is=65df02d6&hm=e3a561887840d67e1cc63b2bcf76012983a755b48bd4b37078f4c0da5a980987&=&format=webp&quality=lossless",
+      'https://media.istockphoto.com/id/1729797005/de/foto/gesch%C3%A4ftstreffen-brainstorming-sitzungen-besprechen-die-analyse-des.jpg?s=612x612&w=0&k=20&c=hbkWZSvvVBm2PIz8PJY6AJGuBx71pwZRuehdr22jlJU=',
     description:
-      "Egal ob als Eye-Catcher bei Messen oder für Social-Media-Kanäle. Wecken Sie nicht nur Interesse bei Ihren Kunden, sondern präsentieren Sie Ihr Produkt auf spannende und verständliche Weise.",
+      'Gemeinsam entwickeln wir Budgets und Prognosen für nachhaltigen Erfolg.',
   },
   {
-    title: "Musikvideos",
+    title: 'Office Management',
     image:
-      "https://media.discordapp.net/attachments/783334533613223946/1143845740796448798/Website_Musikvideo.png?ex=65f177dc&is=65df02dc&hm=fa0e1117565c217cb88b380e6dc063203a7961af5d24a5ca219640b82606ce62&=&format=webp&quality=lossless",
+      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
     description:
-      "Hip-Hop, Jazz oder Klassik. Egal welches Genre Sie bevorzugen, wir finden die passenden Shots zu Ihrer Musik.",
+      'Wir strukturieren Abläufe und koordinieren Termine, damit Ihr Büro rund läuft.',
   },
   {
-    title: "Websites",
+    title: 'Digitale Ablage',
     image:
-      "https://media.discordapp.net/attachments/783334533613223946/1145749048054259842/websites.jpeg?ex=65ef29f4&is=65dcb4f4&hm=ad696f4d9bfce1346baeff7a26be26605f02d469057ab2305383ce0d9f410480&=&format=webp",
+      'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80',
     description:
-      "Damit Ihr fertiges Produkt auch die entsprechende Zielgruppe trifft, bieten wir Ihnen einen kompletten Web-Auftritt an. Wir führen Sie vom ersten Design bis zur fertigen Website, damit Ihr Web-Auftritt gleich einzigartig wie Ihr Produkt ist.",
+      'Wir organisieren Ihre Dokumente digital und schaffen transparente Strukturen.',
   },
 ];
 
@@ -51,54 +51,50 @@ export const Services = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <section className="main-services" id="services">
-      <h2 className="main-services__header">UNSERE SERVICES</h2>
+    <section className='main-services' id='services'>
+      <h2 className='main-services__header'>UNSERE SERVICES</h2>
       <p>
-        In einem ausführlichen Beratungsgespräch erstellen wir Konzepte und
-        festigen die gelieferten Ideen. Auf dieser Grundlage entwickeln wir Ihr
-        gewünschtes Produkt. Neben unserem Allround-Service, welcher die
-        Pre-Produktion, als auch den Dreh und die komplette Post-Produktion
-        inkludiert, helfen wir gerne auch bei individuellen Wünschen weiter.
-        Doch wir produzieren nicht nur Filme: <br />
-        <br /> Otiosum sorgt auch dafür, dass Ihre Filme gesehen werden. Nach
-        der Fertigstellung des Videoprojektes, bieten wir Ihnen einen
-        vollständigen Web-Auftritt an. Unser Web-Developement führt Sie vom
-        Web-Design bis zur fertigen Webseite, damit Ihr Video auch die Kunden
-        erreicht, die Sie erreichen wollen.
+        In einem persönlichen Beratungsgespräch analysieren wir Ihre
+        Anforderungen und entwickeln maßgeschneiderte Lösungen. Neben der
+        laufenden Buchhaltung unterstützen wir Sie auch bei individuellen
+        Anliegen. Wir kümmern uns nicht nur um Zahlen: <br />
+        <br /> Office am See sorgt ebenso für reibungslose Abläufe im Büro. Von
+        digitaler Ablage bis zur Kommunikation mit Behörden – wir halten Ihnen
+        den Rücken frei.
       </p>
       <div
-        className="main-services__card-container"
+        className='main-services__card-container'
         style={{
-          alignItems: width < 1250 ? "center" : "",
-          justifyContent: width < 1250 ? "center" : "flex-start",
+          alignItems: width < 1250 ? 'center' : '',
+          justifyContent: width < 1250 ? 'center' : 'flex-start',
         }}
       >
         <div
-          className="main-services__card-container__cards"
+          className='main-services__card-container__cards'
           style={{
-            flexDirection: width < 1250 ? "column" : "row",
-            width: width < 1250 ? "70%" : "auto",
+            flexDirection: width < 1250 ? 'column' : 'row',
+            width: width < 1250 ? '70%' : 'auto',
           }}
         >
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[0].description}
             image={SERVICES[0].image}
             title={SERVICES[0].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[1].description}
             image={SERVICES[1].image}
             title={SERVICES[1].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[2].description}
             image={SERVICES[2].image}
             title={SERVICES[2].title}
@@ -106,31 +102,31 @@ export const Services = () => {
           ></ServiceCard>
         </div>
         <div
-          className="main-services__card-container__cards"
+          className='main-services__card-container__cards'
           style={{
-            flexDirection: width < 1250 ? "column" : "row",
-            width: width < 1250 ? "70%" : "auto",
+            flexDirection: width < 1250 ? 'column' : 'row',
+            width: width < 1250 ? '70%' : 'auto',
           }}
         >
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[3].description}
             image={SERVICES[3].image}
             title={SERVICES[3].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[4].description}
             image={SERVICES[4].image}
             title={SERVICES[4].title}
             mobile={width < 1250}
           ></ServiceCard>
           <ServiceCard
-            aosType="fade-up"
-            aosDelay="100"
+            aosType='fade-up'
+            aosDelay='100'
             description={SERVICES[5].description}
             image={SERVICES[5].image}
             title={SERVICES[5].title}

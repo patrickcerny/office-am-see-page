@@ -21,7 +21,6 @@ function App() {
             { text: "Home", to: "" },
             { text: "Über Uns", to: "#aboutUs" },
             { text: "Services", to: "#services" },
-            { text: "Unsere Arbeit", to: "#work" },
             { text: "Kontakt", to: "#contact" },
           ]}
         ></Header>
@@ -32,17 +31,14 @@ function App() {
               <>
                 <Modules.LandingImage></Modules.LandingImage>
                 <Modules.AboutUs></Modules.AboutUs>
-                <Modules.InfiniteSlider></Modules.InfiniteSlider>
                 <Modules.OurTeam></Modules.OurTeam>
                 <Modules.Quote
                   quote={
-                    "Unlocking inspiration, one frame at a time. Crafting captivating films and image videos that ignite imaginations."
+                    "Zahlen im Griff, Erfolg im Blick. Ihr Partner für Buchhaltung und Büroorganisation."
                   }
                 ></Modules.Quote>
                 <Modules.Services></Modules.Services>
-                {/* <Modules.NominationsAndAwards></Modules.NominationsAndAwards> */}
                 <Modules.Workflow></Modules.Workflow>
-                <Modules.OurWork></Modules.OurWork>
                 <Modules.Contact></Modules.Contact>
               </>
             }
