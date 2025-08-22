@@ -35,7 +35,7 @@ const Impressum = () => {
         <strong>Tel.:</strong> 06768251906
         <br />
         <strong>E-Mail:</strong>{' '}
-        <a href='mailto:hello@office-am-see.com'>hello@office-am-see.com</a>
+        <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
       </p>
       <p className='adsimple-122010868'>
         <strong>Berufsrecht:</strong> Gewerbeordnung: www.ris.bka.gv.at
@@ -71,17 +71,17 @@ const Impressum = () => {
         Vertretungsberechtigt: Patrick Cerny
         <br />
         E-Mail-Adresse:{' '}
-        <a href='mailto:hello@office-am-see.com'>hello@office-am-see.com</a>
+        <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
         <br />
         Telefon: 067682551906
         <br />
         Impressum:{' '}
         <a
-          href='https://office-am-see.com/impressum'
+          href='https://officeamsee.com/impressum'
           target='_self'
           rel='noopener'
         >
-          https://office-am-see.com/impressum
+          https://officeamsee.com/impressum
         </a>
       </p>
       <h2 id='eu-streitschlichtung' className='adsimple-122010868'>
@@ -155,10 +155,10 @@ const Impressum = () => {
         Urheberrechtshinweis
       </h2>
       <p>
-        Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen
-        dem Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser
-        Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf
-        anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die
+        Alle Inhalte dieser Webseite (Bilder, Fotos, Texte) unterliegen dem
+        Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website
+        verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen
+        Websites erneut veröffentlichen. Falls notwendig, werden wir die
         unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich
         verfolgen.
       </p>
@@ -384,14 +384,13 @@ const Impressum = () => {
           Vertretungsberechtigt: Patrick Cerny
         </span>
         <br />
-        E-Mail:{' '}
-        <a href='mailto:hello@office-am-see.com'>hello@office-am-see.com</a>
+        E-Mail: <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
         <br />
         Telefon: <a href='tel:067682551906'>067682551906</a>
         <br />
         Impressum:{' '}
-        <a href='https://office-am-see.com/impressum'>
-          https://office-am-see.com/impressum
+        <a href='https://officeamsee.com/impressum'>
+          https://officeamsee.com/impressum
         </a>
       </p>
       <h2 id='speicherdauer' className='adsimple-122010868'>

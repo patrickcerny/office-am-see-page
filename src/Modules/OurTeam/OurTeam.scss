@@ -27,6 +27,7 @@
     @include ContentWidth;
     margin: 20px 0 60px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
   }
 }
