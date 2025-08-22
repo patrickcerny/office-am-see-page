@@ -1,25 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useSyncExternalStore } from 'react';
 
-function getScrollTop() {
-  const { scrollY, scrollX } = window;
+type ScrollPosition = {
+  scrollX: number;
+  scrollY: number;
+};
 
-  return {
-    scrollX,
-    scrollY,
+function getScrollPosition(): ScrollPosition {
+  const { scrollX, scrollY } = window;
+  return { scrollX, scrollY };
+}
+
+const listeners = new Set<() => void>();
+
+function onScroll() {
+  listeners.forEach((listener) => listener());
+}
+
+function subscribe(listener: () => void) {
+  if (listeners.size === 0) {
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+    if (listeners.size === 0) {
+      window.removeEventListener('scroll', onScroll);
+    }
   };
 }
 
-export default function useScrollTop() {
-  const [windowDimensions, setWindowDimensions] = useState(getScrollTop());
-
-  useEffect(() => {
-    function handleScroll() {
-      setWindowDimensions(getScrollTop());
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return windowDimensions;
+export default function useScrollTop(): ScrollPosition {
+  return useSyncExternalStore(subscribe, getScrollPosition, getScrollPosition);
 }
