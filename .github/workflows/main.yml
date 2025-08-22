@@ -47,7 +47,7 @@ jobs:
             fi
             docker pull ghcr.io/patrickcerny/office-am-see-page:latest
             docker stop office-am-see-page || true
-            docker rm ooffice-am-see-page || true
+            docker rm office-am-see-page || true
             docker run -d --name office-am-see-page -p 8090:80 ghcr.io/patrickcerny/office-am-see-page:latest
         env:
           GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }} # PAT username (if image is private)
