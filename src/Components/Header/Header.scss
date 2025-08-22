@@ -1,5 +1,5 @@
 @import '../../Styles/variables';
-
+@import '../../Styles/mixins';
 .header {
   z-index: 99999;
   width: 100%;
@@ -82,12 +82,20 @@
       display: flex;
 
       width: 100%;
-      justify-content: space-evenly;
+      justify-content: space-star;
       flex-direction: row;
       align-items: center;
 
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: white;
+
+      h1 {
+        margin-left: 20px;
+      }
       img {
-        width: 50%;
+        margin-left: 20px;
+        width: 10%;
         object-fit: cover;
         object-position: center;
       }

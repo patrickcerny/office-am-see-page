@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import './Header.scss';
 import AnimateHeight from 'react-animate-height';
-import Logo from '../../Assets/logo_black.svg';
+import Logo from '../../Assets/logo.png';
 
 interface NavItem {
   text: string;
@@ -95,11 +95,10 @@ export const Header = ({
           defer
         ></script>
         <a href={`/`}>
-          <img
-            src={Logo}
-            alt='Logo'
-            style={!transparent ? {} : { filter: 'invert(100%)' }}
-          />
+          <img src={Logo} alt='Logo' />
+          <h1 style={{ color: transparent ? 'white' : 'black' }}>
+            OFFICE AM SEE
+          </h1>
         </a>
       </div>
       <ul className='header__navitem-container'>
