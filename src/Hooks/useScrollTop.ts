@@ -5,14 +5,19 @@ type ScrollPosition = {
   scrollY: number;
 };
 
-function getScrollPosition(): ScrollPosition {
-  const { scrollX, scrollY } = window;
-  return { scrollX, scrollY };
+let scrollPosition: ScrollPosition = {
+  scrollX: window.scrollX,
+  scrollY: window.scrollY,
+};
+
+function getSnapshot(): ScrollPosition {
+  return scrollPosition;
 }
 
 const listeners = new Set<() => void>();
 
 function onScroll() {
+  scrollPosition = { scrollX: window.scrollX, scrollY: window.scrollY };
   listeners.forEach((listener) => listener());
 }
 
@@ -30,5 +35,5 @@ function subscribe(listener: () => void) {
 }
 
 export default function useScrollTop(): ScrollPosition {
-  return useSyncExternalStore(subscribe, getScrollPosition, getScrollPosition);
+  return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
 }
