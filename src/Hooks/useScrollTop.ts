@@ -13,12 +13,12 @@ export default function useScrollTop() {
   const [windowDimensions, setWindowDimensions] = useState(getScrollTop());
 
   useEffect(() => {
-    function handleResize() {
+    function handleScroll() {
       setWindowDimensions(getScrollTop());
     }
 
-    window.addEventListener('scroll', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return windowDimensions;

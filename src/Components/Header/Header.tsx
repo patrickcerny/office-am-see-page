@@ -69,7 +69,7 @@ export const Header = ({
   useEffect(() => {
     componentDidMount();
     return componentWillUnmount;
-  });
+  }, []);
 
   if (burgerRef.current)
     burgerRef.current.onclick = () => {
