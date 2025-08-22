@@ -128,11 +128,7 @@ export const Header = ({
       <div className='header__upper-container'>
         <div className='header__upper-container__image-container '>
           <a href={`/`}>
-            <img
-              src={Logo}
-              alt='Logo'
-              style={!transparent ? {} : { filter: 'invert(100%)' }}
-            />
+            <img className='image-mobile' src={Logo} alt='Logo' />
           </a>
         </div>
         <div className='header__upper-container__burger_container'>
