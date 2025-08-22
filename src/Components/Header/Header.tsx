@@ -25,60 +25,61 @@ export const Header = ({
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   const burgerRef = useRef<HTMLDivElement>(null);
-
-  const resizeEvent = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  const scrollEvent = () => {
-    if (forceColor) return;
-
-    if (showMenu) {
-      setTransparent(false);
-    } else {
-      if (window.scrollY >= scrollBreakpoint) {
-        if (transparent) {
-          setTransparent(false);
-        }
-      } else {
-        if (!transparent) {
-          setTransparent(true);
-        }
-      }
-    }
-  };
-
-  const componentDidMount = () => {
-    if (burgerRef.current)
-      burgerRef.current.onclick = () => {
-        if (!showMenu) {
-          setTransparent(false);
-        } else if (window.scrollY <= scrollBreakpoint) setTransparent(true);
-
-        setShowMenu(!showMenu);
-      };
-    window.addEventListener('resize', resizeEvent);
-    window.addEventListener('scroll', scrollEvent);
-  };
-
-  const componentWillUnmount = () => {
-    window.removeEventListener('resize', resizeEvent);
-    window.removeEventListener('scroll', scrollEvent);
-  };
+  const showMenuRef = useRef(showMenu);
+  const transparentRef = useRef(transparent);
 
   useEffect(() => {
-    componentDidMount();
-    return componentWillUnmount;
-  });
+    showMenuRef.current = showMenu;
+  }, [showMenu]);
 
-  if (burgerRef.current)
-    burgerRef.current.onclick = () => {
-      if (!showMenu) {
-        setTransparent(false);
-      } else if (window.scrollY <= scrollBreakpoint) setTransparent(true);
+  useEffect(() => {
+    transparentRef.current = transparent;
+  }, [transparent]);
 
-      setShowMenu(!showMenu);
+  useEffect(() => {
+    const resizeEvent = () => {
+      setWindowWidth(window.innerWidth);
     };
+
+    const scrollEvent = () => {
+      if (forceColor) return;
+
+      if (showMenuRef.current) {
+        setTransparent(false);
+      } else {
+        if (window.scrollY >= scrollBreakpoint) {
+          if (transparentRef.current) {
+            setTransparent(false);
+          }
+        } else {
+          if (!transparentRef.current) {
+            setTransparent(true);
+          }
+        }
+      }
+    };
+
+    const burger = burgerRef.current;
+    if (burger) {
+      burger.onclick = () => {
+        if (!showMenuRef.current) {
+          setTransparent(false);
+        } else if (window.scrollY <= scrollBreakpoint) {
+          setTransparent(true);
+        }
+        setShowMenu(!showMenuRef.current);
+      };
+    }
+
+    window.addEventListener('resize', resizeEvent);
+    window.addEventListener('scroll', scrollEvent, { passive: true });
+
+    return () => {
+      window.removeEventListener('resize', resizeEvent);
+      window.removeEventListener('scroll', scrollEvent);
+      if (burger) burger.onclick = null;
+    };
+  }, [forceColor]);
 
   return windowWidth >= mobileBreakpoint ? (
     <nav
