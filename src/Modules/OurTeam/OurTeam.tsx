@@ -9,7 +9,7 @@ const TEAM: TeamCardType[] = [
   {
     name: "Leonhard Ohneberg",
     image: Leo,
-    job: "Schnitt, Regie",
+    job: "Buchhaltung & Finanzen",
     desc: "",
     links: [
       {
@@ -29,7 +29,7 @@ const TEAM: TeamCardType[] = [
   {
     name: "Marvin Heine",
     image: Marvin,
-    job: "Kamera, Produktion",
+    job: "Office Management",
     desc: "",
     links: [
       {
@@ -49,7 +49,7 @@ const TEAM: TeamCardType[] = [
   {
     name: "Patrick Cerny",
     image: Patrick,
-    job: "Webdevelopment, Visual-Effects",
+    job: "IT & Digitalisierung",
     desc: "",
     links: [
       {
@@ -84,11 +84,10 @@ export const OurTeam = () => {
       <h2 className="main-our-team__header">ÜBER UNS</h2>
       <div className="main-our-team__text">
         <p>
-          Als Absolventen der Handelsakademie für Digital Business mit
-          Spezialisierung auf Internet und Multimedia haben wir bereits eine
-          jahrelange Berufserfahrung. Unsere Expertise ermöglicht es
-          konkurrenzfähige Resultate zu produzieren, mit denen Sie am Markt
-          hervorstechen werden.
+          Als erfahrenes Team im Rechnungswesen und Office-Management bringen
+          wir Struktur in Ihre Zahlen und Abläufe. Mit präziser Arbeit und
+          moderner Software sorgen wir dafür, dass Sie sich auf Ihr
+          Kerngeschäft konzentrieren können.
         </p>
       </div>
 

@@ -4,24 +4,24 @@ import "./Workflow.scss";
 
 const ITEMS: { icon: any; label: string }[] = [
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/1688/1688488.png",
-    label: "Konzeption",
+    icon: "https://cdn-icons-png.flaticon.com/512/3063/3063824.png",
+    label: "Beratung",
   },
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/4838/4838756.png",
-    label: "Pre-Produktion",
+    icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
+    label: "Belegsammlung",
   },
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/2699/2699237.png",
-    label: "Produktion",
+    icon: "https://cdn-icons-png.flaticon.com/512/2331/2331947.png",
+    label: "Buchung",
   },
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/977/977597.png",
-    label: "Post-Produktion",
+    icon: "https://cdn-icons-png.flaticon.com/512/2103/2103665.png",
+    label: "Auswertung",
   },
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/1997/1997928.png",
-    label: "Vermarktung",
+    icon: "https://cdn-icons-png.flaticon.com/512/1909/1909552.png",
+    label: "Betreuung",
   },
 ];
 
@@ -41,7 +41,7 @@ export const Workflow = () => {
 
   return (
     <section className="main-workflow">
-      <h2 className="main-workflow__header">WIE MACHEN WIR'S?</h2>
+      <h2 className="main-workflow__header">SO ARBEITEN WIR</h2>
       <div
         className="main-workflow__item-container"
         style={{

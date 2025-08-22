@@ -64,10 +64,9 @@ export const Contact = () => {
       <div className="main-contact__text-container">
         <h2 className="main-contact__text-container__header">SCHREIB UNS!</h2>
         <p>
-          Haben sie eine Idee? Oder möchten Sie einfach nur einen Kaffee mit uns
-          trinken? Gerne können Sie uns via Kontaktformular oder direkt per
-          Email kontaktieren. Wir sind aber auch telefonisch für Ihre Fragen und
-          Anliegen erreichbar.
+          Haben Sie Fragen zur Buchhaltung oder möchten Sie Ihre Büroabläufe
+          optimieren? Kontaktieren Sie uns über das Formular oder direkt per
+          E-Mail. Auch telefonisch sind wir für Ihre Anliegen erreichbar.
         </p>
       </div>
       <div className="main-contact__contact-container">

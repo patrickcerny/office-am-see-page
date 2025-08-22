@@ -6,16 +6,12 @@ const NavBar = () => {
 
   const navItems: { id: string; label: string }[] = [
     { id: 'home', label: 'Home' },
-    { id: 'aboutUs', label: 'About Us' },
+    { id: 'aboutUs', label: 'Über Uns' },
     {
       id: 'services',
-      label: 'Our Services',
+      label: 'Services',
     },
-    {
-      id: 'work',
-      label: 'Our Work',
-    },
-    { id: 'contact', label: 'Contact Us' },
+    { id: 'contact', label: 'Kontakt' },
   ];
   return (
     <nav className='main-navbar'>
@@ -30,7 +26,7 @@ const NavBar = () => {
               }
         }
       >
-        <img src={logo} alt='Otiosum Logo'></img>
+        <img src={logo} alt='Office am See Logo'></img>
       </div>
       {mobile ? null : (
         <ul className='main-navbar__item-container'>
