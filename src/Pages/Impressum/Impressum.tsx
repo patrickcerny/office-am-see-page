@@ -10,7 +10,7 @@ const Impressum = () => {
         §25 Mediengesetz.
       </p>
       <p className='adsimple-122010868'>
-        Office am See
+        Officeamsee e.U.
         <br />
         Seeschanze 1, Top 12/13, <br />
         6900 Bregenz, <br />
@@ -19,17 +19,13 @@ const Impressum = () => {
       <p className='adsimple-122010868'>
         <strong>Unternehmensgegenstand:</strong> Buchhaltungs- &amp; Büroservice
         <br />
-        <strong>UID-Nummer:</strong> ATU12345678
+        <strong>Firmenbuchnummer:</strong> FN 661467x
         <br />
-        <strong>GLN:</strong> 1234567891234
-        <br />
-        <strong>GISA:</strong> 12345678
-        <br />
-        <strong>Firmenbuchnummer:</strong> 123456a
+        <strong>Steuernummer:</strong> 97 011/7172
         <br />
         <strong>Firmenbuchgericht:</strong> Landesgericht Feldkirch
         <br />
-        <strong>Firmensitz:</strong> Bregenz
+        <strong>Firmensitz:</strong> Lochau
       </p>
       <p className='adsimple-122010868'>
         <strong>Tel.:</strong> 06768251906
@@ -47,16 +43,6 @@ const Impressum = () => {
         <strong>Berufsbezeichnung:</strong> Buchhalter
         <br />
         <strong>Verleihungsstaat:</strong> Österreich
-      </p>
-      <p className='adsimple-122010868'>
-        <strong>Vertretungsbefugte Gesellschafter</strong>
-        <br />
-        Marvin Heine, Leonhard Ohneberg, Patrick Cerny
-      </p>
-      <p className='adsimple-122010868'>
-        <strong>Beteiligungsverhältnisse</strong>
-        <br />
-        Marvin Heine 1/3, Leonhard Ohneberg 1/3, Patrick Cerny 1/3
       </p>
       <p className='adsimple-122010868'>
         <strong>Kontaktdaten des Verantwortlichen für Datenschutz</strong>
