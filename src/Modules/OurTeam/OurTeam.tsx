@@ -3,7 +3,7 @@ import { TeamCardType } from '../../Types/TeamCardType';
 import './OurTeam.scss';
 import { TeamCard } from './TeamCard/TeamCard';
 import Patrick from '../../Assets/Team/patrick.jpg';
-import Dalibor from '../../Assets/Team/dalibor.png';
+import Dalibor from '../../Assets/Team/Dalibor.jpg';
 
 const TEAM: TeamCardType[] = [
   {
