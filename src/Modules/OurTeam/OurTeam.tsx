@@ -14,15 +14,15 @@ const TEAM: TeamCardType[] = [
     links: [
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png',
-        link: 'https://www.linkedin.com/in/leonhard-ohneberg-633a2b239/',
+        link: 'https://www.linkedin.com/in/dalibor-cerny-50214b286/',
       },
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png',
-        link: 'https://www.instagram.com/leonhard.ohneberg/',
+        link: 'https://www.instagram.com/dalibor.cerny/',
       },
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Whatsapp_svg-512.png',
-        link: 'https://wa.me/06644600114',
+        link: 'https://wa.me/+4367682551905',
       },
     ],
   },
@@ -42,7 +42,7 @@ const TEAM: TeamCardType[] = [
       },
       {
         icon: 'https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Whatsapp_svg-512.png',
-        link: 'https://wa.me/067682551906',
+        link: 'https://wa.me/+4367682551906',
       },
     ],
   },
