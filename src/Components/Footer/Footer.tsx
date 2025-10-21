@@ -16,7 +16,7 @@ const Footer = () => {
           </span>
 
           <span>
-            <a href='tel:+4367682551905'>+43 676 82 55 19 05</a>
+            <a href='tel:+436765686541'>+43 676 56 86 541</a>
           </span>
           <span>
             <a href='mailto:hello@officeamsee.com'>hello@officeamsee.com</a>
