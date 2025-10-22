@@ -35,7 +35,7 @@ export const Contact = () => {
     console.log(firstName, lastName, email, message);
 
     const result = await emailjs.send(
-      'service_ncli3zr',
+      'service_au565g7',
       'template_pmdfp1g',
       {
         from_name: firstName + ' ' + lastName,
