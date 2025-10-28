@@ -8,28 +8,25 @@ const SERVICES: { title: string; image: string; description: string }[] = [
     image:
       'https://media.istockphoto.com/id/1432903655/de/foto/finanzen-buchhaltung-und-fintech-ein-mann-am-computer-und-taschenrechner-der-seine.jpg?s=612x612&w=0&k=20&c=RM00Op1J6B-VeddhZsYE4IEg5bw3TsVV6r6jQWYvszQ=',
     description:
-      'Wir übernehmen Ihre laufende Finanzbuchhaltung und sorgen für klare Zahlen.',
+      'Wir unterstützen Sie in Ihrer laufenden Buchhaltung und sorgen für klare Zahlen.',
   },
   {
     title: 'Lohnverrechnung',
     image:
       'https://media.istockphoto.com/id/1364970875/de/foto/gehaltsscheck-im-umschlag.jpg?s=612x612&w=0&k=20&c=CSy3Jf9zUs_MCD11cVr41-DsQnN-kzfjirlXyyMM9R8=',
-    description:
-      'Pünktliche und korrekte Gehaltsabrechnungen für Ihre Mitarbeiter.',
+    description: 'Coming Soon...',
   },
   {
     title: 'Steuererklärungen',
     image:
       'https://media.istockphoto.com/id/1002720376/de/foto/deutsche-steuererkl%C3%A4rung.jpg?s=612x612&w=0&k=20&c=NG2l1a2FZLchSKTCPbrInzqYm1GDzQMmUm2KX5JENkM=',
-    description:
-      'Wir bereiten Ihre Steuererklärungen vor und begleiten Sie durch das Steuerjahr.',
+    description: 'Coming Soon...',
   },
   {
     title: 'Finanzplanung',
     image:
       'https://media.istockphoto.com/id/1729797005/de/foto/gesch%C3%A4ftstreffen-brainstorming-sitzungen-besprechen-die-analyse-des.jpg?s=612x612&w=0&k=20&c=hbkWZSvvVBm2PIz8PJY6AJGuBx71pwZRuehdr22jlJU=',
-    description:
-      'Gemeinsam entwickeln wir Budgets und Prognosen für nachhaltigen Erfolg.',
+    description: 'Coming Soon...',
   },
   {
     title: 'Office Management',
