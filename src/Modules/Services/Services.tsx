@@ -11,6 +11,20 @@ const SERVICES: { title: string; image: string; description: string }[] = [
       'Wir unterstützen Sie in Ihrer laufenden Buchhaltung und sorgen für klare Zahlen.',
   },
   {
+    title: 'Office Management',
+    image:
+      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
+    description:
+      'Wir strukturieren Abläufe und koordinieren Termine, damit Ihr Büro rund läuft.',
+  },
+  {
+    title: 'Digitale Ablage',
+    image:
+      'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80',
+    description:
+      'Wir organisieren Ihre Dokumente digital und schaffen transparente Strukturen.',
+  },
+  {
     title: 'Lohnverrechnung',
     image:
       'https://media.istockphoto.com/id/1364970875/de/foto/gehaltsscheck-im-umschlag.jpg?s=612x612&w=0&k=20&c=CSy3Jf9zUs_MCD11cVr41-DsQnN-kzfjirlXyyMM9R8=',
@@ -27,20 +41,6 @@ const SERVICES: { title: string; image: string; description: string }[] = [
     image:
       'https://media.istockphoto.com/id/1729797005/de/foto/gesch%C3%A4ftstreffen-brainstorming-sitzungen-besprechen-die-analyse-des.jpg?s=612x612&w=0&k=20&c=hbkWZSvvVBm2PIz8PJY6AJGuBx71pwZRuehdr22jlJU=',
     description: 'Coming Soon...',
-  },
-  {
-    title: 'Office Management',
-    image:
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'Wir strukturieren Abläufe und koordinieren Termine, damit Ihr Büro rund läuft.',
-  },
-  {
-    title: 'Digitale Ablage',
-    image:
-      'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80',
-    description:
-      'Wir organisieren Ihre Dokumente digital und schaffen transparente Strukturen.',
   },
 ];
 
